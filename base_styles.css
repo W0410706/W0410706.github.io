@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/*
+    Portfolio
+    Basic Style Sheet for All Pages
+
+    Author: Collinda Fahey
+    Date:
+
+    Filename: base_styles.css
+*/
+
+/* HTML & Body styles */
+
+html {
+    display: flex;
+    background: url(arrow.jpg) center center / cover no-repeat fixed;
+    width: 100%;
+}
+
+body {
+    background: skyblue;
+    width: 100%;
+}
+
+/* Header styles */
+
+header {
+    background: mediumaquamarine;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* Navigation list styles */
+
+nav {
+    background: lightcoral;
+}
+
+ul {
+    background: paleturquoise;
+}
+
+li {
+    background: aliceblue;
+}
+
+
+/* Section Styles */
+
+
+
+/* Article Styles */
+article {
+
+}
+
+
+
+/* Footer styles */
+
+footer {
+    background: lightgoldenrodyellow;
+}
+
