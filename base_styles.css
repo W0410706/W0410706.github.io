@@ -5,63 +5,142 @@
     Basic Style Sheet for All Pages
 
     Author: Collinda Fahey
-    Date:
+    Date:   2017-12-08
 
     Filename: base_styles.css
 */
 
+
+/* ===========
+   Base Styles
+   ===========
+*/
+
 /* HTML & Body styles */
 
+
 html {
-    display: flex;
     background: url(arrow.jpg) center center / cover no-repeat fixed;
     width: 100%;
 }
 
 body {
-    background: skyblue;
-    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
 }
+
+/*body {*/
+    /*margin: 0 auto;*/
+    /*width: 100%;*/
+    /*max-width: 1020px;*/
+    /*min-width: 640px;*/
+/*}*/
 
 /* Header styles */
 
 header {
     background: mediumaquamarine;
+    clear: both;
 }
 
-h1, h2 {
+h1 {
+    padding: 3em;
+    /*border: 0.4em solid white;*/
+    /*background: white;*/
+    /*border-radius: 2em;*/
+    /*text-align: center;*/
+}
+
+h2 {
+    padding: 2em;
     text-align: center;
 }
 
 /* Navigation list styles */
 
+
 nav {
-    background: lightcoral;
+    /*background: lightcoral;*/
+    display: table;
+    width: 100%;
+    /*padding: 0.5em;*/
 }
 
 ul {
     background: paleturquoise;
+    display: table-row;
 }
 
 li {
     background: aliceblue;
+    display: table-cell;
+    width: 16%;
+    text-align: center;
+    /*padding: 0.5em;*/
+}
+
+a:link, a:visited {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 0.5em 0.8em;
+    text-align: center;
 }
 
 
-/* Section Styles */
+a:hover, a:active {
+    background-color: lightcoral;
+}
 
+/* Main Section Styles */
 
-
-/* Article Styles */
 article {
-
+    background: white;
+    /*border: 0.4em dashed lightskyblue;*/
+    float: right;
+    width: 35%;
+    margin: 7em;
+    padding: 2em;
+    border-radius: 4em;
 }
 
-
+p {
+    padding: 0.5em;
+}
 
 /* Footer styles */
 
+
 footer {
-    background: lightgoldenrodyellow;
+    clear: both;
+    padding: 0.8em;
+    background: cornflowerblue;
+    text-align: center;
 }
 
+/* ===============================
+   Mobile Styles: 0px to 480px
+   ===============================
+*/
+
+@media only screen and (max-width: 480px) {
+
+}
+
+
+/* ================================
+   Tablet Styles: 481px and greater
+   ================================
+*/
+
+@media only screen and (min-width: 481px) {
+
+}
+
+/* =================================
+   Desktop Styles: 769px and greater
+   =================================
+*/
+
+@media only screen and (min-width: 769px) {
+
+}
