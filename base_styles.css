@@ -20,7 +20,7 @@
 
 
 html {
-    background: url(arrow.jpg) center center / cover no-repeat fixed;
+    background: url(arrow.jpg) center center / cover no-repeat;
     width: 100%;
 }
 
@@ -97,14 +97,18 @@ article {
     background: white;
     /*border: 0.4em dashed lightskyblue;*/
     float: right;
-    width: 35%;
-    margin: 7em;
-    padding: 2em;
+    width: 38%;
+    margin: 6.5em;
+    padding: 2.5em;
     border-radius: 4em;
 }
 
 p {
-    padding: 0.5em;
+    padding: 1em;
+}
+
+p:last-of-type {
+    padding-bottom: 1.2em;
 }
 
 /* Footer styles */
