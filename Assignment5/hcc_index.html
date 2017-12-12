@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      New Perspectives on HTML5 and CSS3, 7th Edition
+      Tutorial 6
+      Case Problem 4
+
+      Hamilton Conference Center Room Schedule
+      Author: Collinda Fahey
+      Date:   2017-11-09
+
+      Filename:   hcc_schedule.html
+
+   -->
+   
+   <meta charset="utf-8" />
+   <title>Hamilton Conference Center</title>
+   <link href="hcc_reset.css" rel="stylesheet" />
+   <link href="hcc_styles.css" rel="stylesheet" />    
+   <link href="hcc_schedule.css" rel="stylesheet" /> 
+</head>
+
+<body>
+   <header>
+      <h1>HCC Room Schedule</h1>
+      <h2>Links to Other HCC Web sites:</h2>
+      <nav>
+         <ul>
+            <li><a href="#">Home Page</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Facilities</a></li>
+            <li><a href="#">Virtual Tour</a></li>
+            <li><a href="#">Staff</a></li>
+            <li><a href="#">Calendar of Events</a></li>
+            <li><a href="#">Contact Info</a></li>
+            <li><a href="#">Directions</a></li>
+			<li><a href="#">FAQ</a></li>
+         </ul>
+      </nav>
+   </header>
+   
+   <div id="container">
+  
+      <section id="main"> 
+			
+         <table class="schedule">
+		   <caption>Reservations for Conference Rooms: &nbsp; <em>Tuesday, April 10</em></caption>
+		   <colgroup>
+			   <col id="firstCol" />
+			   <col class="roomCols" span="7" />
+		   </colgroup>
+		   <thead>
+			   <tr>
+				 <th>Time</th>
+				 <th>Sunrise Room</th>
+				 <th>Mountain View Room</th>
+				 <th>Arbor Hall</th>
+				 <th>Mitchell Theater</th>
+				 <th>Gold Room</th>
+				 <th>Blue Room</th>
+				 <th>Green Room</th>	   
+			   </tr>
+		   </thead>
+		   <tfoot>
+		       <tr>
+			     <td colspan="8">To reserve a room, please contact Yancy Inwe at extension 388 or by e-mail at 
+		             <a href="#">yancyinwe@hconfcenter.org</a>.*</td>
+			   </tr>
+		   </tfoot>
+		   <tbody>
+			   <tr>
+				 <th>8:00 am</th>
+				 <td rowspan="4">Marriage Encounter</td>
+				 <td rowspan="2">Breakfast Club of Ohio</td>
+				 <td rowspan="8">Computer Expo set up</td>
+				 <td rowspan="14" class="open">&nbsp;</td>
+				 <td rowspan="2" class="open">&nbsp;</td>
+				 <td rowspan="2" class="open">&nbsp;</td>
+				 <td rowspan="2" class="open">&nbsp;</td>
+			   </tr>
+			   <tr>
+				 <th>8:30 am</th>
+			   </tr>
+			   <tr>
+				 <th>9:00 am</th>
+				 <td rowspan="4" class="open">&nbsp;</td>
+				 <td rowspan="3">The Tompkins Group</td>
+				 <td rowspan="3">Retirement Planning</td>
+				 <td rowspan="4">Drivers' Ed</td>
+			   </tr>
+			   <tr>
+				 <th>9:30 am</th>
+			   </tr>
+			   <tr>
+				 <th>10:00 am</th>
+				 <td rowspan="4" class="open">&nbsp;</td>
+			   </tr>
+			   <tr>
+				 <th>10:30 am</th>
+				 <td rowspan="3">Pearson Planning</td>
+				 <td rowspan="3">The Senior Group</td>
+			   </tr>
+			   <tr>
+				 <th>11:00 am</th>
+				 <td rowspan="4">Ohio Conference of Librarians</td>
+				 <td rowspan="5">Movie Club</td>
+			   </tr>
+			   <tr>
+				 <th>11:30 am</th>
+			   </tr>
+			   <tr>
+				 <th>12:00 pm</th>
+				 <td rowspan="2">Marriage Encounter Luncheon</td>
+				 <td rowspan="2" class="open">&nbsp;</td>
+				 <td rowspan="4" class="open">&nbsp;</td>
+				 <td rowspan="2">Senior Luncheon</td>
+			   </tr>
+			   <tr>
+				 <th>12:30 pm</th>
+			   </tr>
+			   <tr>
+				 <th>1:00 pm</th>
+				 <td rowspan="4" class="open">&nbsp;</td>
+				 <td rowspan="2" class="open">&nbsp;</td>
+				 <td rowspan="8">Computer Expo opening session</td>
+				 <td rowspan="5">Senior Classes</td>
+			   </tr>
+			   <tr>
+				 <th>1:30 pm</th>
+				 <td rowspan="4" class="open">&nbsp;</td>
+			   </tr>
+			   <tr>
+				 <th>2:00 pm</th>
+				 <td rowspan="6">Ohio Book Resale Setup</td>
+				 <td rowspan="3">Mothers of Multiples</td>
+			   </tr>
+			   <tr>
+				 <th>2:30 pm</th>
+			   </tr>
+			   <tr>
+				 <th>3:00 pm</th>
+				 <td rowspan="4">Marriage Encounter Talks</td>
+				 <td rowspan="4">Youth Theatre</td>
+			   </tr>
+			   <tr>
+				 <th>3:30 pm</th>
+				 <td rowspan="3">Teen Connection</td>
+				 <td rowspan="3">Tutoring</td>
+				 <td rowspan="3">Tutoring</td>
+			   </tr>
+			   <tr>
+				 <th>4:00 pm</th>
+			   </tr>
+			   <tr>
+				 <th>4:30 pm</th>
+			   </tr>
+		   </tbody>
+		 </table>
+
+		 <aside>
+		   <h2>Here are the room descriptions:</h2>
+		     <dl>
+			   <div>
+			     <dt>Sunrise Room</dt>
+			     <dd>Maximum Capacity: 80</dd>
+			   </div>
+			   <div>
+			     <dt>Moutain View Room</dt>
+			     <dd>Maximum Capacity: 150</dd>
+               </div>
+			   <div> 
+				 <dt>Arbor Hall</dt>
+				 <dd>Maximum Capacity: 190</dd>
+               </div>
+			   <div>
+				 <dt>Mitchell Theatre</dt>
+				 <dd>Maximum Capacity: 120</dd>
+               </div>
+			   <div>
+				 <dt>Gold Room</dt>
+				 <dd>Maximum Capacity: 40</dd>
+			   </div>
+			   <div>
+				 <dt>Blue Room</dt>
+				 <dd>Maximum Capacity: 30</dd>
+               </div>
+			   <div>
+				 <dt>Green Room</dt>
+				 <dd>Maximum Capacity: 55</dd>
+			   </div>
+			 </dl>
+
+		   <p>*Reservations should be made at least 48 hours in advance. Cancellations require 
+		      24 hour notice. Room deposits will not be returned for cancellations within 24 
+			  hours of the scheduled event.</p>
+		 </aside>
+		 
+      </section>
+      
+   </div>
+</body>
+
+<footer>
+  <address>Hamilton Conference Center &#9702;
+	       8711 West Park Lane &#9702;
+	       Hamilton, OH 45011 &#9702;
+	       (513) 555 - 7911</address>
+</footer>
+</html>
+

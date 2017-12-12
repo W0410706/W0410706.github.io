@@ -24,16 +24,14 @@ html {
     width: 100%;
 }
 
-body {
-    font-family: Helvetica, Arial, sans-serif;
+html.scrollPage {
+    background: url(arrow.jpg) center center / cover no-repeat fixed;
 }
 
-/*body {*/
-    /*margin: 0 auto;*/
-    /*width: 100%;*/
-    /*max-width: 1020px;*/
-    /*min-width: 640px;*/
-/*}*/
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.7em;
+}
 
 /* Header styles */
 
@@ -44,10 +42,6 @@ header {
 
 h1 {
     padding: 3em;
-    /*border: 0.4em solid white;*/
-    /*background: white;*/
-    /*border-radius: 2em;*/
-    /*text-align: center;*/
 }
 
 h2 {
@@ -55,30 +49,28 @@ h2 {
     text-align: center;
 }
 
-/* Navigation list styles */
-
-
-nav {
-    /*background: lightcoral;*/
-    display: table;
-    width: 100%;
-    /*padding: 0.5em;*/
+h3 {
+    text-align: center;
 }
 
-ul {
-    background: paleturquoise;
+/* Navigation list styles */
+
+nav {
+    display: table;
+    width: 100%;
+}
+
+nav ul {
     display: table-row;
 }
 
-li {
-    background: aliceblue;
+nav li {
     display: table-cell;
     width: 16%;
     text-align: center;
-    /*padding: 0.5em;*/
 }
 
-a:link, a:visited {
+nav a:link, nav a:visited {
     display: block;
     background-color: black;
     color: white;
@@ -86,8 +78,7 @@ a:link, a:visited {
     text-align: center;
 }
 
-
-a:hover, a:active {
+nav a:hover, a:active {
     background-color: lightcoral;
 }
 
@@ -95,7 +86,6 @@ a:hover, a:active {
 
 article {
     background: white;
-    /*border: 0.4em dashed lightskyblue;*/
     float: right;
     width: 38%;
     margin: 6.5em;
@@ -103,12 +93,54 @@ article {
     border-radius: 4em;
 }
 
-p {
+p, dl {
+    font-size: 0.9em;
     padding: 1em;
 }
 
-p:last-of-type {
+dt {
+    text-decoration: underline;
+    padding-top: 1em;
+}
+
+p:last-of-type, dd:last-of-type {
     padding-bottom: 1.2em;
+}
+
+article img {
+    display: block;
+    margin: auto;
+    width: 20%;
+    padding: 1em;
+}
+
+/* List Styles */
+
+article ul {
+    font-size: 0.9em;
+    list-style-type: square;
+    padding-left: 1em;
+}
+
+ul#workLinks a {
+    text-decoration: none;
+    color: blue;
+}
+
+ul#workLinks li {
+    background: white;
+    display: block;
+    text-align: center;
+}
+
+ul#workLinks a:link, nav a:visited {
+    display: block;
+    padding: 0.5em 0.8em;
+    text-align: center;
+}
+
+ul#workLinks a:hover, a:active {
+    background: darkgrey;
 }
 
 /* Footer styles */

@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 4
+
+   Park City Gazette Style Sheet
+   Author: Collinda Fahey
+   Date:   2017-10-27
+
+   Filename:         pcg_paper.css
+
+*/
+
+/* HTML and Body Styles */
+
+html {
+	background-color: rgb(189, 138, 70);
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 0.95em;
+	line-height: 1.6em;
+	background-color: white; 
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+	min-width: 640px;
+	width: 95%;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+}
+
+/* Body Header Styles */
+
+h1, h2 {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.5em;
+	word-spacing: 0.1em;
+	padding-bottom: 1em;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+nav.verticalNavigation h1 {
+	color: white;
+}
+
+/* Horizontal Navigation Styles */
+
+nav.horizontalNavigation li {
+	display: block;
+	width: 12%;
+	float: left;
+	margin-top: 14px;
+	margin-bottom: 2px;
+	padding-bottom: 2em;
+}
+
+nav.horizontalNavigation a {
+	display: block;
+	color: green;
+	text-align: right;
+}
+
+/* Vertical Navigation Styles */
+
+aside {
+	display: block;
+	width: 33%;
+	height: 100%;
+	clear: left;
+	float: right;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+nav.verticalNavigation {
+	padding: 10px 10px 10px 10px;
+	background-color: rgb(41, 35, 22);
+	line-height: 2em;
+}
+
+nav.verticalNavigation > ul {
+	color: white;
+	list-style-type: square;
+	padding-left: 16px;
+}
+
+nav.verticalNavigation > ul > li > a {
+	color: rgb(132, 154, 56);
+}
+
+h1#classifieds, h1#tourism {
+	padding-top: 2em;
+}
+
+li#contact{
+	padding-bottom: 28em;
+}
+
+/* Article Styles */
+
+article {
+	padding-left: 2em;
+}
+
+article.feature h1 {
+	margin-top: 1.5em;
+}
+
+article.feature img {
+	margin: 12px;
+	width: 12%;
+	float: left;
+}
+
+p {
+	padding-bottom: 1em;
+}
+
+article.feature ol {
+	padding-left: 20px;
+}
+
+article.feature ol li:last-of-type {
+	margin-bottom: 42px;
+}
+
+/* Footer Styles */
+
+footer {
+	clear: both;
+	color: white;
+	background-color: rgb(132, 154, 56);
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+address {
+	position: absolute;
+	top: 25%;
+	left: 20%;
+}

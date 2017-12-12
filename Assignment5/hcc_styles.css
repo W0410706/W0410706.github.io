@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Hamilton Conference Center Style Sheet
+   Author: Collinda Fahey
+   Date:   2017-11-09
+
+   Filename:         hcc_styles.css
+   Supporting files: 
+
+*/
+
+/* HTML and Body styles */
+
+html {
+	background: rgb(171, 205, 239);
+}
+
+body {
+	font-family: 'Trebuchet MS', Verdana, sans-serif;
+	font-size: 0.95em;
+	line-height: 1.6em;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+	min-width: 640px;
+	width: 95%;
+}
+
+/* Header styles */
+
+h1 {
+	font-size: 3.2em;
+	word-spacing: 0.1em;
+	text-align: center;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: white;
+	padding: 40px;
+}
+
+h2 {
+	font-size: 1.2em;
+	text-decoration: underline;
+}
+
+
+/* Navigation list styles */
+
+a:hover, a:active {
+	background: white;
+	color: gray;
+}
+
+ul {
+	padding: 12px;
+}
+
+li a {
+	color: purple;
+}
+
+/* Container Styles */
+
+div#container {
+	padding-bottom: 20px;
+}
+
+/* Main Section styles */
+
+section#main {
+
+}
+
+/* Aside styles */
+
+aside {
+	padding: 30px;
+}
+
+aside h2 {
+	padding-bottom: 8px;
+}
+
+aside p {
+	padding-top: 90px;
+	padding-bottom: 100px;
+}
+
+/* Column Layout styles */
+
+@media only screen and (min-width: 641px) {
+	aside {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+		
+		-moz-column-gap: 30px;
+		-webkit-column-gap: 30px;
+		column-gap: 30px;
+	}
+}
+
+/* Definition List styles */
+
+dl {
+	display: table;
+	border-collapse: collapse;
+	width: 90%;
+}
+
+dl div {
+	display: table-row;
+}
+
+dt, dd {
+	display: table-cell;
+	background: white;
+	color: rgb(84, 4, 77);
+	border: 1px solid black;
+	vertical-align: top;
+	padding: 5px;
+}
+
+/* Footer styles */
+
+footer {
+	clear: both;
+	color: white;
+	background: rgb(84, 4, 77);
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+address {
+	position: absolute;
+	top: 25%;
+	left: 17%;
+}
