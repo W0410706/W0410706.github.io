@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/* All Section styles */
+body {
+    background: #F4CCCA;
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+/* Nav Section styles */
+.navbar {
+    padding-bottom: 2rem;
+}
+
+/* Home Section styles */
+h2 {
+    /*color: #150f13;*/
+    /*font-size: 4rem;*/
+}
+
+.slogan {
+    text-align: center;
+    padding: 2rem;
+}
+
+.portrait-container > .row{
+    justify-content: center;
+}
+
+/* Gap Analysis Section styles */
+.gap-analysis {
+    /*text-align: center;*/
+    background: aliceblue;
+    padding: 4rem;
+}
+
+.ga-section {
+    padding-top: 2rem;
+}
+
+p, ul {
+    font-family: sans-serif;
+    list-style: none;
+}
+
+.vue-description {
+    padding-top: 2rem;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 600px){
+    h2 {
+        font-size: 3.8rem;
+    }
+
+    .navbar {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .img-wrapper {
+        padding-left: 4rem;
+    }
+
+    .img-direct {
+        padding-top: 4rem;
+        padding-left: 4rem;
+    }
+}
