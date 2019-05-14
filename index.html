@@ -15,29 +15,29 @@
     <div class="navbar justify-content-center">
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link icon" id="homeLink" href="#">
+                <a class="nav-link icon" id="homeLink" href="#slogan">
                     <img class="img-fluid img-responsive" id="homeIcon" alt="Responsive image" src="images/homeIconWhite.png">
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="eyeLink" href="#">
+                <a class="nav-link" id="eyeLink" href="#work-samples">
                     <img class="img-fluid img-responsive" id="eyeIcon" alt="Responsive image" src="images/eyeIconWhite.png">
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="personLink" href="#">
+                <a class="nav-link" id="personLink" href="#about">
                     <img class="img-fluid img-responsive" id="personIcon" alt="Responsive image" src="images/personIconWhite.png">
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="letterLink" href="#">
+                <a class="nav-link" id="letterLink" href="#contact">
                     <img class="img-fluid img-responsive" id="letterIcon" alt="Responsive image" src="images/letterIconWhite.png">
                 </a>
             </li>
         </ul>
     </div>
 
-    <div class="container-fluid slogan">
+    <div class="container-fluid" id="slogan">
         <h2>Hi, I'm Collinda,</h2>
         <h2>a full-stack web developer.</h2>
     </div>
@@ -50,123 +50,159 @@
         </div>
     </div>
 
-    <div class="container-fluid gap-analysis">
-        <div class="row">
-            <div class="col-12">
-                <h2>Gap Analysis: Vue.js</h2>
-                <!--<h3>What I learned about Vue.js</h3>-->
+    <div class="container-fluid" id="work-samples">
+        <div class="row" id="blocks">
+            <div class="col-sm-12">
+                <h2>Have a look at what I've been working on...</h2>
             </div>
-            <div class="col-sm-12 col-md-6 img-wrapper">
-                <img class="img-fluid img-responsive" alt="Responsive image" src="images/vueLogo.png">
+            <div class="card col-sm-12 col-md-4 sample">
+                <a href="vuejs.html" target="_blank">
+                    <img class="img-fluid img-responsive" alt="Responsive image" src="images/vueLogo.png">
+                </a>
+                <div class="card-body">
+                    <p class="card-text">Gap Analysis: Vue.js</p>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-6 vue-description">
-                <h4>What is Vue.js?</h4>
-                <p>
-                    Vue.js is a progressive framework for JavaScript, similar to Angular or React, used for building user
-                    interfaces and front-end applications.
-                </p>
-
-                <h4>Why use it?</h4>
-                <p>
-                    Vue.js is approachable, versatile, performant, maintainable, and testable. It can easily be integrated with
-                    other libraries or existing projects. It is also easy to learn and useful for building lightweight,
-                    powerful Single Page Applications. Vue.js is rapidly gaining in popularity, so it could become important
-                    for front-end web developers to know.
-                </p>
+            <div class="card col-sm-12 col-md-4 sample">
+                <img class="img-fluid img-responsive" alt="Responsive image" src="images/ponyBackdrop.jpg">
+                <div class="card-body">
+                    <p class="card-text">Phaser 3: JumpPony</p>
+                </div>
             </div>
-        </div>
-
-        <div class="row ga-section">
-            <div class="col-sm-12 col-md-6">
-                <h4>Vue Components</h4>
-                <p>
-                    Vue components are reusable components that hold data and can pass data to other components through
-                    props (properties held within a component tag). Each Vue component is a single file ending in
-                    <strong>.vue</strong>, with <strong>App.vue</strong> as the root component that contains the other
-                    components of the application and the global styles. Components can be nested within one another so
-                    that there are several layers between <strong>App.vue</strong> and the innermost component.
-                </p>
-
-                <h4>Component Anatomy</h4>
-                <p>
-                    Every component contains the code that defines its structure, logic, and appearance:
-                </p>
-                <ul>
-                    <li><strong>&lt; template &gt;</strong> contains the HTML for output/structure.</li>
-                    <li><strong>&lt; script &gt;</strong> contains the JavaScript for functionality/logic.</li>
-                    <li><strong>&lt; style &gt;</strong> contains the CSS for appearance/style.</li>
-                </ul>
-            </div>
-            <div class="col-sm-12 col-md-6 img-wrapper">
-                <img class="img-fluid img-responsive" alt="Responsive image" src="images/componentStructure.png">
+            <div class="card col-sm-12 col-md-4 sample">
+                <img class="img-fluid img-responsive" alt="Responsive image" src="images/tvm-header-logo.png">
+                <div class="card-body">
+                    <p class="card-body">React App: TV Maze</p>
+                </div>
             </div>
         </div>
-
-        <div class="row ga-section">
-            <div class="col-sm-12 col-md-6">
-                <h4>Vue Templating -----------------------------></h4>
-                <img class="img-fluid img-responsive img-direct" alt="Responsive image" src="images/directives.png">
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <h4>Vue Interpolation</h4>
-                <p>
-                    Interpolation, denoted with two sets of curly braces, is used within Vue Templating in order to
-                    display something to the screen. It cannot be applied to attributes; it must be used between html
-                    tags. JavaScript variables or expressions (like ternary operators) can be put within interpolations.
-                </p>
-
-                <h4>Vue Directives</h4>
-                <p>
-                    Vue Directives are denoted by v- and are also used in Vue Templating. Vue directives are meant to be
-                    used within an html element’s opening tag to do a variety of things. They can be triggers for functions
-                    on certain events or can make conditional calls to functions and can be used for many other purposes.
-                    There are about a dozen Vue directives, but some of the most common are the following:
-                </p>
-                <ul>
-                    <li><strong>v-for</strong></li>
-                    <li><strong>v-if</strong></li>
-                    <li><strong>v-bind</strong></li>
-                    <li><strong>v-on</strong></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <h4>v-on Shorthand</h4>
-                <p>
-                    The <strong>@</strong> symbol can be used as a shorthand for <strong>v-on</strong>. It is completely
-                    optional to use, but it is there to simplify code.
-                </p>
-                <p>
-                    Some common uses for <strong>v-on</strong> shorthand:
-                </p>
-                <ul>
-                    <li><strong>@click</strong></li>
-                    <li><strong>@submit</strong></li>
-                    <li><strong>@[event]</strong></li>
-                </ul>
-            </div>
-
-            <div class="col-sm-12 col-md-6">
-                <h4>Class & Style Binding</h4>
-                <p>
-                    Can bind a class to an html element to then target with the css, so styles for this class can be
-                    defined in the <strong>&lt; style &gt;</strong> section of the component. This is especially nice for
-                    attaching a class on the fly depending on whether an event is triggered.
-                </p>
-                <p>
-                    The code for binding a class looks like this: <br/>
-                    <strong>v-bind:class=“ … ”</strong>
-                </p>
-                <p>
-                    It is also possible to bind inline styles to an html element. The code for this looks like: <br/>
-                    <strong>v-bind:style=“ … ”</strong>
-                </p>
-            </div>
-        </div>
-
     </div>
+
+    <div class="container-fluid" id="about">
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <p>placeholder</p>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <h2>About Me</h2>
+                <p>
+                    I’m a web developer with a degree in Fine Arts who loves designing, building things, and challenging
+                    myself to learn new skills. I’m working to integrate my design skills with coding to produce well-designed,
+                    user-friendly websites.
+                </p>
+                <p>
+                    I’m currently in my final semester at Nova Scotia Community College, pursuing a diploma in Web Development.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container-fluid" id="contactForm">
+            <form>
+                <fieldset>
+                    <legend>Contact Me</legend>
+
+                    <div class="form-group row">
+                        <div class="col-3">
+                            <label for="firstName">First Name:</label>
+                        </div>
+                        <div class="col-9">
+                            <input id="firstName" class="form-control" type="text" name="fName" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-3">
+                            <label for="lastName">Last Name:</label>
+                        </div>
+                        <div class="col-9">
+                            <input id="lastName" class="form-control" type="text" name="lName" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-3">
+                            <label for="phoneNum">Phone:</label>
+                        </div>
+                        <div class="col-9">
+                            <input id="phoneNum" class="form-control" type="text" name="phone" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-3">
+                            <label for="email">Email:</label>
+                        </div>
+                        <div class="col-9">
+                            <input id="email" class="form-control" type="email" name="email" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-3">
+                            <label>Reason for contacting:</label>
+                        </div>
+                        <div class="input-group mb-3 col-9">
+                            <select class="custom-select" id="inputGroupSelect02">
+                                <option selected>Please choose...</option>
+                                <option value="1">Offering employment</option>
+                                <option value="2">Seeking collaboration</option>
+                                <option value="3">Just to chat</option>
+                            </select>
+                            <div class="input-group-append">
+                                <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-3">
+                            <label for="commentArea">Comments/Questions:</label>
+                        </div>
+                        <div class="col-9">
+                            <textarea class="form-control" id="commentArea" rows="4"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-3">
+                            <label>Preferred contact method:</label>
+                        </div>
+                        <div class="col-9">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="phoneCheck">
+                                <label class="form-check-label" for="phoneCheck">Phone</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="emailCheck">
+                                <label class="form-check-label" for="emailCheck">Email</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+            </form>
+        </div>
+
+        <div class="container-fluid triangleContainer justify-content-center">
+            <div class="triangle"></div>
+        </div>
+        <div class="form-group btnContainer">
+            <button class="btn btn-primary justify-content-center" type="submit">Send Message</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <span>Collinda Fahey &copy; 2019</span>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

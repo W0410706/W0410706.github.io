@@ -17,13 +17,124 @@ h2 {
     /*font-size: 4rem;*/
 }
 
-.slogan {
+#slogan {
     text-align: center;
     padding: 2rem;
 }
 
 .portrait-container > .row{
     justify-content: center;
+}
+
+/* Work Samples Section styles */
+#work-samples {
+    background: #FFEDED;
+    /*padding: 0 4rem 0 4rem;*/
+}
+
+#work-samples h2 {
+    padding: 3rem 2rem 2rem 2rem;
+    font-size: 2rem;
+}
+
+/*#blocks {*/
+    /*display: flex;*/
+/*}*/
+
+.sample {
+    padding: 0 2rem 0 2rem;
+    align-items: center;
+}
+
+.card-body {
+    align-items: center;
+}
+
+/* About Section styles */
+#about {
+    background:  white;
+    padding: 4rem;
+}
+
+/* Contact Section styles */
+#contact {
+    background: #FFEDED;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+#contactForm {
+    background: lightskyblue;
+    max-width: 60%;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 0.5%;
+}
+
+.triangleContainer {
+    display: flex;
+}
+
+/* The following code was adapted from: https://css-tricks.com/the-shapes-of-css/ */
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 3rem solid transparent;
+    border-right: 3rem solid transparent;
+    border-top: 3rem solid lightskyblue;
+    margin-bottom: 1rem;
+    border-radius: 0.5%;
+}
+
+.form-group {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+legend {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+/* Button Styles */
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    font-size: larger;
+}
+
+/* The following code was adapted from w3schools */
+button {
+    -webkit-animation-name: btnColor; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: btnColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes btnColor {
+    from {background-color: darkblue;}
+    to {background-color: dodgerblue;}
+}
+
+/* Standard syntax */
+@keyframes btnColor {
+    from {background-color: darkblue;}
+    to {background-color: dodgerblue;}
+}
+
+/* Footer Section styles */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #f68782;
 }
 
 /* Gap Analysis Section styles */
@@ -64,5 +175,13 @@ p, ul {
     .img-direct {
         padding-top: 4rem;
         padding-left: 4rem;
+    }
+
+    #work-samples {
+        padding: 0 4rem 0 4rem;
+    }
+
+    .sample {
+        padding: 0 4rem 0 4rem;
     }
 }
