@@ -43,7 +43,7 @@ h2 {
 
 .sample {
     padding: 0 2rem 0 2rem;
-    align-items: center;
+    /* align-items: center; */
 }
 
 /*.card-body {*/
