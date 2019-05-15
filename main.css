@@ -9,6 +9,11 @@ body {
 /* Nav Section styles */
 .navbar {
     padding-bottom: 2rem;
+    display: flex;
+}
+
+.nav {
+    align-items: center;
 }
 
 /* Home Section styles */
@@ -53,7 +58,12 @@ h2 {
 /* About Section styles */
 #about {
     background:  white;
-    padding: 4rem;
+    padding: 2rem;
+}
+
+#about h2 {
+    text-align: center;
+    padding-bottom: 1.5rem;
 }
 
 /* Contact Section styles */
@@ -64,7 +74,7 @@ h2 {
 }
 
 #contactForm {
-    background: lightskyblue;
+    background: #9d6d7deb;
     max-width: 60%;
     margin-top: 3rem;
     padding-top: 2rem;
@@ -82,7 +92,7 @@ h2 {
     height: 0;
     border-left: 3rem solid transparent;
     border-right: 3rem solid transparent;
-    border-top: 3rem solid lightskyblue;
+    border-top: 3rem solid #9d6d7deb;
     margin-bottom: 1rem;
     border-radius: 0.5%;
 }
@@ -106,6 +116,7 @@ legend {
 
 .btn {
     font-size: larger;
+    color: white;
 }
 
 /* The following code was adapted from w3schools */
@@ -120,14 +131,14 @@ button {
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes btnColor {
-    from {background-color: darkblue;}
-    to {background-color: dodgerblue;}
+    from {background-color: #f68782;}
+    to {background-color: black;}
 }
 
 /* Standard syntax */
 @keyframes btnColor {
-    from {background-color: darkblue;}
-    to {background-color: dodgerblue;}
+    from {background-color: #f68782;}
+    to {background-color: black;}
 }
 
 /* Footer Section styles */
@@ -168,6 +179,10 @@ p, ul {
         padding-bottom: 2rem;
     }
 
+    #slogan {
+        padding: 2rem 2rem 1rem 2rem;
+    }
+
     .img-wrapper {
         padding-left: 4rem;
     }
@@ -183,5 +198,10 @@ p, ul {
 
     .sample {
         padding: 0 4rem 0 4rem;
+    }
+
+    #about {
+        background:  white;
+        padding: 4rem 20rem 4rem 20rem;
     }
 }
